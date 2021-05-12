@@ -1,9 +1,10 @@
 "use strict";
-//validacion numero si el numero es mayor o igual a 1 o menor o igual a 100
+//cada vez que hace clic se suma un intento
 const button = document.querySelector(".js-button");
 const userNumber = document.querySelector(".js-userNumber");
 const clue = document.querySelector(".js-clue");
-const counter = document.querySelector(".js-counter");
+const tryCount = document.querySelector(".js-counter");
+let counterStart = 0;
 const randomNumber = getRandomNumber(100);
 
 function numberVerification() {
@@ -19,10 +20,19 @@ function numberVerification() {
   }
 }
 
+function counter() {
+  tryCount.value = `Número de intentos: ` + (counterStart += 1);
+}
+
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
+function clickButtonHandler() {
+  numberVerification();
+  counter();
+}
+
 window.addEventListener("load", getRandomNumber);
-button.addEventListener("click", numberVerification);
+button.addEventListener("click", clickButtonHandler);
 console.log("El número es: " + randomNumber);
