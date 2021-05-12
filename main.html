@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evaluación intermedia</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>Adivina el número</h1>
+    <section>
+      <form class="form">
+        <label for="userNumber" class="subTitle"
+          >Introduce aquí tu número</label
+        >
+        <input
+          class="input"
+          id="userNumber"
+          placeholder="1-100"
+          type="number"
+          name="userNumber"
+        />
+        <label for="button"></label>
+        <input class="button" type="submit" value="Prueba" />
+        <label for="pista"></label>
+        <input
+          type="text"
+          class="input"
+          id="clue"
+          name="clue"
+          value="Pista: Escribe tu número y dale a prueba"
+          readonly
+        />
+        <label for="intentos" class="try"></label>
+        <input
+          class="input"
+          type="text"
+          id="intentos"
+          name="try"
+          value="Número de intentos:0"
+          readonly
+        />
+      </form>
+    </section>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
