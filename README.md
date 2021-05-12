@@ -9,7 +9,7 @@ This last weeks I've been learning some Javascript and this is my first attempt 
 - Small and simple HTML
 - A random number between 1 to 100 must be generated only once
 - The user number guess must be between 1 to 100
-- In the clue box the user will find if his guess is to low or high
+- In the clue box the user will find if his guess is too low or high
 - If the user guess is correct a congratulations message will appear.
 - There is a counter of how many times the user has tried to guess the number.
 
