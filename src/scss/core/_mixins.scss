@@ -1,0 +1,21 @@
+@mixin tablet() {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+@mixin tablet2() {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+@mixin minidesktop() {
+  @media (min-width: 890px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

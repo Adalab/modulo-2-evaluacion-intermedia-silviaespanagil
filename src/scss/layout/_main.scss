@@ -1,0 +1,164 @@
+.page {
+  height: 100%;
+}
+
+.main {
+  background-color: $color-noWhite;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    //box-shadow: 0 1px 10px 0 $color-darkGrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-blueRgba;
+    padding: 20px;
+    &--title {
+      font-family: $font-circus;
+      color: $color-red;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 1rem;
+      @include tablet() {
+        font-size: 1.2rem;
+      }
+      @include tablet2() {
+        font-size: 1.5rem;
+      }
+      @include desktop() {
+        font-size: 2rem;
+      }
+    }
+    &--text {
+      font-weight: 200;
+      font-size: 0.5rem;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 2px solid $color-blue;
+      @include tablet() {
+        font-size: 0.8rem;
+      }
+      @include tablet2() {
+        font-size: 1rem;
+      }
+      @include desktop() {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__form {
+    font-weight: 200;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 10px 20px;
+    background-color: $color-noWhite;
+    &--subTitle {
+      text-align: center;
+      font-weight: 100;
+      font-size: 1rem;
+    }
+    &--input {
+      padding: 10px;
+      margin: 10px 0 10px 0;
+      border: 1px solid $color-darkGrey;
+      box-shadow: 5px 5px 5px $color-blueRgba;
+      background-color: $color-noWhite;
+    }
+    &--button {
+      font-family: $font-circus;
+      letter-spacing: 2px;
+      color: $color-noWhite;
+      width: 150px;
+      height: 50px;
+      background-color: $color-blue;
+      border-radius: 15px;
+      text-transform: uppercase;
+      border: none;
+      margin: 20px 0 20px 0;
+      &:hover {
+        background-color: $color-red;
+        box-shadow: 10px 10px 20px $color-blueRgba;
+        color: $color-noWhite;
+        transform: translateY(-2px);
+      }
+    }
+  }
+  &__result {
+    font-weight: 200;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+    background-color: $color-noWhite;
+    &--clue {
+      border: 1px solid $color-darkGrey;
+      padding: 10px;
+      margin: 0 0 10px 0;
+    }
+    &--counter {
+      border: 1px solid $color-darkGrey;
+      padding: 10px;
+      margin: 10px 0 10px 0;
+    }
+    &--help {
+      &-button {
+        font-family: $font-circus;
+        letter-spacing: 2px;
+        color: $color-noWhite;
+        width: 150px;
+        height: 50px;
+        background-color: $color-red;
+        border-radius: 15px;
+        text-transform: uppercase;
+        border: none;
+        margin: 20px 0 20px 0;
+        &:hover {
+          background-color: $color-blue;
+          box-shadow: 10px 10px 20px $color-blueRgba;
+          color: $color-noWhite;
+          transform: translateY(-2px);
+        }
+      }
+      &-solution {
+        border: 5px dotted $color-red;
+        padding: 10px;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+}
+.js-hidden {
+  display: none;
+}
+.js-numberhidden {
+  display: none;
+}
+.js-winner {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: $font-circus;
+  color: $color-red;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  animation: go-button 1s ease infinite;
+}
+input:focus {
+  border: 1px solid $color-blue;
+  box-shadow: 0 1px 1px $color-blueRgba;
+}
+@keyframes go-button {
+  from {
+    border: 4px dotted $color-red;
+    color: $color-blue;
+  }
+  to {
+    border: 4px dotted $color-blue;
+    color: $color-red;
+  }
+}

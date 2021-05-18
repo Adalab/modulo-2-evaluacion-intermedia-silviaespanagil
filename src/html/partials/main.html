@@ -1,0 +1,41 @@
+<main class="main">
+  <section class="main__title">
+    <h2 class="main__title--title">Hombre vs.Ordenador</h2>
+    <h3 class="main__title--text">La batalla definitiva</h3>
+  </section>
+  <section>
+    <form class="main__form js-body">
+      <label for="userNumber"
+        >Adivina el número que pensó la máquina y gana la batalla</label
+      >
+      <input
+        class="main__form--input js-userNumber"
+        id="userNumber"
+        placeholder="1-100"
+        type="number"
+        name="userNumber"
+        min="1"
+        max="100"
+        required
+      />
+      <label for="button"></label>
+      <input
+        class="main__form--button js-button"
+        type="button"
+        value="Prueba"
+        id="button"
+      />
+    </form>
+  </section>
+  <section class="main__result">
+    <p class="main__result--clue js-clue ">Veamos que tan cerca estás...</p>
+    <p class="main__result--counter js-counter">Cantidad de intentos</p>
+    <div class="main__result--help">
+      <button class="main__result--help-button js-hidden js-help" title="Si haces click la máquina gana">
+        Me rindo
+      </button>
+      <p class="main__result--help-solution js-pcNumber js-numberhidden">El número era:</p>
+      </p>
+    </div>
+  </section>
+</main>
