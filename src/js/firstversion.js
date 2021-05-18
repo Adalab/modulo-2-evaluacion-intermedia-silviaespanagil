@@ -33,6 +33,6 @@ function clickButtonHandler() {
   counter();
 }
 
-window.addEventListener("load", getRandomNumber);
+/*window.addEventListener("load", getRandomNumber);*/
 button.addEventListener("click", clickButtonHandler);
 console.log("El número es: " + randomNumber);
