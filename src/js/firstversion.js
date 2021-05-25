@@ -1,5 +1,5 @@
 "use strict";
-//cada vez que hace clic se suma un intento
+
 const button = document.querySelector(".js-button");
 const userNumber = document.querySelector(".js-userNumber");
 const clue = document.querySelector(".js-clue");

@@ -9,12 +9,11 @@ let counterStartV2 = 0;
 const randomNumberV2 = getRandomNumber(100);
 const help = document.querySelector(".js-help");
 const pcNumber = document.querySelector(".js-pcNumber");
-//const hide = document.querySelector(".js-hidden");
+const form = document.querySelector(".js-body");
 
 //funciones
 
 function numberVerification() {
-  const form = document.querySelector(".js-body");
   const number = parseInt(userNumberV2.value);
   if (number > 100 || number < 1) {
     clueV2.innerHTML = "El número debe estar entre 1 y 100";
@@ -42,15 +41,13 @@ function helpButton() {
   }
 }
 
-/*function getRandomNumber(max) {
-  return Math.ceil(Math.random() * max);
-}*/
-
 function helpGiven() {
-  help.classList.add("js-hidden");
-  pcNumber.classList.remove("js-numberhidden");
   pcNumber.innerHTML = "El número ganador era el " + randomNumberV2;
+  pcNumber.classList.remove("js-numberhidden");
+  help.classList.add("js-hidden");
+  userNumberV2.classList.add("js-hidden");
   buttonV2.classList.add("js-hidden");
+  form.classList.add(".js-hidden");
 }
 
 function clickButtonHandler() {
