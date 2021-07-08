@@ -3,6 +3,9 @@
 ¡Hola!
 
 This last weeks I've been learning some Javascript and this is my first attempt on something real using a couple of functions and events ✨
+
+
+
 <img src="https://user-images.githubusercontent.com/81619759/124809737-be731680-df60-11eb-8a13-8153f06d6ca2.png" width="300"/>
 
 
