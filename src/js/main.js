@@ -18,9 +18,10 @@ function numberVerification() {
   if (number > 100 || number < 1) {
     clueV2.innerHTML = "El número debe estar entre 1 y 100";
   } else if (number < randomNumberV2) {
-    clueV2.innerHTML = "Tu número es menor que el de la máquina";
+    clueV2.innerHTML =
+      "Tu número es menor que el de la máquina...intenta de nuevo";
   } else if (number > randomNumberV2) {
-    clueV2.innerHTML = "El número que escogiste es muy alto";
+    clueV2.innerHTML = "Uy! ese número es muy alto... indica  uno menor";
   } else if (number === randomNumberV2) {
     clueV2.innerHTML = "¡Ganaste!";
     clueV2.classList.add("js-winner");
@@ -31,7 +32,8 @@ function numberVerification() {
 }
 
 function counter() {
-  tryCountV2.innerHTML = parseInt((counterStartV2 += 1));
+  tryCountV2.innerHTML =
+    "Llevas " + parseInt((counterStartV2 += 1)) + " intentos";
 }
 
 function helpButton() {

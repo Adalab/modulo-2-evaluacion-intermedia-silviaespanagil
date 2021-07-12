@@ -1,17 +1,19 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   border-top: 3px dotted $color-blue;
   padding: 20px;
-  display: flex;
+  width: 100%;
   height: 150px;
-  display: flex;
-
+  align-self: flex-end;
   &__version {
-    font-weight: 200;
-    font-size: 0.5rem;
-    padding-bottom: 5px;
-    height: 100px;
-    @include tablet() {
-      font-size: 0.6rem;
+    font-size: 1rem;
+  }
+  &__copy {
+    &-img {
+      height: 25px;
+      width: 25px;
     }
   }
 }
