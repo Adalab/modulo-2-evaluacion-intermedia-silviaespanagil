@@ -1,10 +1,8 @@
-# Javascript: Intermediate evaluation for Adalab
+# Javascript: Let's play a  game!
 ## _Guess the number_
-¡Hola!
+¡Hola mundo!
 
-This last weeks I've been learning some Javascript and this is my first attempt on something real using a couple of functions and events ✨
-
-
+As a way to practice my Javascript skills I did a game: Guess the number - Humankind vs. Machine. It's a very simple game, the machine will pic a secret random number and you have to guess it. If you can't, no problem, there will be some hints. It's play time!✨
 
 <img src="https://user-images.githubusercontent.com/81619759/124809737-be731680-df60-11eb-8a13-8153f06d6ca2.png" width="300"/>
 
