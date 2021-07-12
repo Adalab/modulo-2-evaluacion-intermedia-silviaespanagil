@@ -35,10 +35,11 @@ function counter() {
   tryCountV2.innerHTML =
     "Llevas " + parseInt((counterStartV2 += 1)) + " intentos";
 }
+console.log(counterStartV2);
 
 function helpButton() {
-  help.scrollTop = help.scrollHeight;
-  if (tryCountV2.innerHTML > 5) {
+  // help.scrollTop = help.scrollHeight;
+  if (parseInt(counterStartV2) > 5) {
     help.classList.remove("js-hidden");
   }
 }
@@ -49,7 +50,9 @@ function helpGiven() {
   help.classList.add("js-hidden");
   userNumberV2.classList.add("js-hidden");
   buttonV2.classList.add("js-hidden");
-  form.classList.add(".js-hidden");
+  form.classList.add("js-hidden");
+  clueV2.classList.add("js-hidden");
+  tryCountV2.classList.add("js-hidden");
 }
 
 function clickButtonHandler() {
@@ -60,7 +63,6 @@ function clickButtonHandler() {
 
 //eventos
 
-window.addEventListener("load", getRandomNumber);
 button.addEventListener("click", clickButtonHandler);
 help.addEventListener("click", helpGiven);
 console.log("El número es: " + randomNumberV2);
